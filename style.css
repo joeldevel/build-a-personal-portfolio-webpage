@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -29,7 +30,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background: lightblue; */
 }
 
 body {
@@ -38,7 +38,9 @@ body {
     "header header header"
     "main   main   main"
     "footer footer footer";
+    background: #eee;
     background-image: url(./img/dot-grid.png);
+    background-blend-mode: multiply;
 }
 
 #main-header {
@@ -67,7 +69,10 @@ main {
 
 footer {
   grid-area: footer;
-  /* background: green; */
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+  background: plum;
 }
 
 
@@ -126,11 +131,5 @@ footer {
   border: 1px solid black;
   margin-right: 1rem;
   padding: 1rem;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  min-height: 50px;
-  background: plum;
+  background: white;
 }
