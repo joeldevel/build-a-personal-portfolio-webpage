@@ -10,6 +10,14 @@ html {
   font-size: 62.5%;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   font-family: sans-serif;
   font-size: 1.6rem;
@@ -22,4 +30,87 @@ body {
   display: flex;
   flex-direction: column;
   /* background: lightblue; */
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main   main   main"
+    "footer footer footer";
+}
+
+#main-header {
+  grid-area: header;
+  /* background: red; */
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(0,0,0,0.2);
+}
+
+main {
+  grid-area: main;
+  /* background: blue; */
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 1200px;
+}
+
+footer {
+  grid-area: footer;
+  /* background: green; */
+}
+
+
+/* navbar */
+.logo-container {
+  /* background: white; */
+  align-self: center;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+  background: plum;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+#navbar {
+  /* display: block; */
+  grid-area: header;
+  display: flex;
+}
+#navbar ul {
+  margin-top: 20px;
+  display: flex;
+  /* background: yellow; */
+  margin-left: auto;
+}
+
+/* #navbar ul li:not(:last-of-type) {
+  margin-right: 20px;
+} */
+
+#navbar ul li {
+  margin-right: 20px;
+}
+
+#navbar ul li a {
+  transition: all 0.2s ease;;
+  /* background: red; */
+}
+#navbar ul li a:hover {
+  color: chartreuse;
+}
+
+/* main */
+.main-title {
+  text-align: center;
+  padding-top: 2rem;
 }
