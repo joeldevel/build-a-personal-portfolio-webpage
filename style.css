@@ -75,8 +75,8 @@ body {
 main {
   grid-area: main;
   /* background: blue; */
-  margin: 0 auto;
-  margin-top: 70px;
+  margin: 70px auto;
+  /* margin-top: 70px; */
   max-width: 1200px;
   padding: 0.5rem;
 }
@@ -91,7 +91,11 @@ footer {
 
 
 /* general headings, p ,button, etc */
+section {
+  /* margin-top: 70px; */
+}
 .row-section {
+  margin-top: 140px;
   margin-bottom: 1rem;
 }
 
@@ -194,7 +198,11 @@ h1 {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  an
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  font-size: 4rem;
+  font-family: monospace;
 }
 
 @keyframes look {
@@ -248,4 +256,11 @@ h1 {
 
 .blog-entry__title {
   font-size: 2rem;
+}
+
+#welcome-section,
+#projects,
+#blog {
+  /* make the nav not overlap the section. seems to be not widely supported */
+  scroll-margin-top: 70px;
 }
