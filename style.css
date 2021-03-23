@@ -94,8 +94,13 @@ footer {
   margin-bottom: 1rem;
 }
 
+h1 {
+  color: var(--black-3);
+  font-size: 3rem;
+}
 .sub-title {
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  color: var(--black-2);
 }
 
 .btn {
@@ -123,6 +128,8 @@ margin-bottom: 1rem;
   /* display: block; */
   grid-area: header;
   display: flex;
+
+  z-index: 100;
 }
 #navbar ul {
   margin-top: 20px;
@@ -148,9 +155,31 @@ margin-bottom: 1rem;
 }
 
 /* main */
+
+#welcome-section {
+  background-color: rgba(190, 100,100, 0.5);
+  background-image: url(./img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+  /* clip-path: inset(5% 20% 15% 10%); */
+  /* clip-path: polygon(51% 40%, 0% 100%, 100% 100%); */
+  /* clip-path: polygon(0% 15%, 35% 19%, 15% 0%, 85% 0%, 73% 40%, 100% 15%, 100% 85%, 86% 51%, 85% 100%, 15% 100%, 56% 68%, 0% 85%); */
+}
 .main-title {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 3rem;
+}
+
+.tagline {
+  display: block;
+  font-size: 6rem;
+  max-width: 300px;
+  /* color: crimson; */
+  color: black;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 /* projects */
