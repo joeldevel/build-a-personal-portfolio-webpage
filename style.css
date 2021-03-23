@@ -69,6 +69,7 @@ body {
   left: 0;
   width: 100vw;
   background: rgba(0,0,0,0.2);
+  z-index: 1000;
 }
 
 main {
@@ -129,7 +130,6 @@ h1 {
   grid-area: header;
   display: flex;
 
-  z-index: 100;
 }
 #navbar ul {
   margin-top: 20px;
@@ -151,13 +151,13 @@ h1 {
   /* background: red; */
 }
 #navbar ul li a:hover {
-  color: chartreuse;
+  color: deeppink;
 }
 
 /* main */
 
 #welcome-section {
-  background-color: rgba(190, 100,100, 0.5);
+  background-color: rgba(100, 100,100, 0.9);
   background-image: url(./img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,22 +166,60 @@ h1 {
   /* clip-path: inset(5% 20% 15% 10%); */
   /* clip-path: polygon(51% 40%, 0% 100%, 100% 100%); */
   /* clip-path: polygon(0% 15%, 35% 19%, 15% 0%, 85% 0%, 73% 40%, 100% 15%, 100% 85%, 86% 51%, 85% 100%, 15% 100%, 56% 68%, 0% 85%); */
+  animation-name: opaciter;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .main-title {
   text-align: center;
   padding-top: 3rem;
+  color: chartreuse;
 }
 
 .tagline {
   display: block;
   font-size: 6rem;
-  max-width: 300px;
+  max-width: 410px;
   /* color: crimson; */
   color: black;
   text-transform: uppercase;
   text-align: left;
+  padding-left: 2rem;
+  background: rgba(255, 0, 0, 0.5);
+  margin-left: -2rem;
 }
 
+.watch {
+  animation-name: look;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  an
+}
+
+@keyframes look {
+  0% {
+    color: orangered;
+  }
+  50% {
+    color: chartreuse;
+  }
+  100% {
+    color: orangered;
+  }
+}
+
+@keyframes opaciter {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* projects */
 #projects {
   display: flex;
