@@ -279,14 +279,32 @@ h1 {
 }
 
 .blog-entry {
-  /* background: blue; */
-  flex: 0 1 30%;
+  background: #fafafa;
+  flex: 1 1 30%;
   border: 1px solid black;
-  padding: 1rem;
+  padding: 2rem 2rem 3rem;
+  margin: 1rem;
 }
 
 .blog-entry__title {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.blog-entry-excerpt {
+  margin-bottom: 2rem;
+}
+
+.blog-entry__read-more {
+  background: chartreuse;
+  color: #222;
+  opacity: 0.6;
+  transition: opacity 0.2s ;
+}
+
+.blog-entry__read-more:hover {
+  opacity: 1.0;
 }
 
 #welcome-section,
