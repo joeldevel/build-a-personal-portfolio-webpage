@@ -51,7 +51,7 @@ body {
     "header header header"
     "main   main   main"
     "footer footer footer";
-    background: #eee;
+    background: #e3e3e3;
     background-image: url(./img/dot-grid.png);
     background-blend-mode: multiply;
 }
@@ -68,7 +68,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  background: rgba(0,0,0,0.2);
+  background: rgba(100,100,70,0.4);
   z-index: 1000;
 }
 
@@ -95,7 +95,7 @@ section {
   /* margin-top: 70px; */
 }
 .row-section {
-  margin-top: 140px;
+  /* margin-top: 140px; */
   margin-bottom: 1rem;
 }
 
@@ -104,8 +104,10 @@ h1 {
   font-size: 3rem;
 }
 .sub-title {
+  margin-top: 140px;
   margin-bottom: 1rem;
   color: var(--black-2);
+  text-transform: capitalize;
 }
 
 .btn {
@@ -153,9 +155,14 @@ h1 {
 #navbar ul li a {
   transition: all 0.2s ease;;
   /* background: red; */
+  text-transform: capitalize;
+  /* background: black; */
+  color: #46484f;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 #navbar ul li a:hover {
-  color: deeppink;
+  color: white;
 }
 
 /* main */
@@ -231,6 +238,10 @@ h1 {
 /* projects */
 #projects {
   display: flex;
+  /* margin-bottom: 70px; */
+  /* background: red; */
+  min-height: 100vh;
+  align-items:center;
 }
 .project-card {
   position: relative;
@@ -306,6 +317,12 @@ h1 {
 .blog-entry__read-more:hover {
   opacity: 1.0;
 }
+
+#blog {
+  min-height: 100vh;
+  align-items: center;
+}
+
 
 #welcome-section,
 #projects,
