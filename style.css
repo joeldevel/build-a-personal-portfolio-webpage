@@ -233,11 +233,42 @@ h1 {
   display: flex;
 }
 .project-card {
+  position: relative;
   flex: 1 1 30%;
   border: 1px solid black;
   margin-right: 1rem;
   padding: 1rem;
   background: white;
+}
+.project-img {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.project-title {
+  font-size: 3rem;
+}
+
+.project-card-overlay {
+  background: black;
+}
+.project-card img {
+ transition: all 0.2s;
+}
+.project-card:hover img{
+  opacity: 0.1;
+}
+
+.hidden-text {
+  position: absolute;
+  z-index: 0;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: black;
 }
 
 /*       blog     */
